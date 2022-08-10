@@ -9,7 +9,7 @@ require('./db.js');
 
 const server = express();
 
-app.use(cors({origin: /\.herokuapp\.com$/}));
+app.use(cors(/* {origin: /\.herokuapp\.com$/} */));
 
 server.name = 'API';
 
