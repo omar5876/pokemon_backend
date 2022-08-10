@@ -8,6 +8,8 @@ require('./db.js');
 
 const server = express();
 
+app.use(cors({origin: /\.herokuapp\.com$/}));
+
 server.name = 'API';
 
 server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
